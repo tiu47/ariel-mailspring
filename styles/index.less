@@ -23,6 +23,10 @@ here, so you can use modern CSS like -webkit-filter and -webkit-mask-image
 (which is used to make most of the icons in the app styleable via a
 background color.)
 */
+
+
+
+
 .sheet-toolbar {
   border-bottom: 1px solid @border-color-divider;
   box-shadow: none;
@@ -49,4 +53,124 @@ img.content-light {
 
 .thread-list .list-item:not(.unread):not(.selected):not(.focused) {
   color: #aaa;
+
+  color: #8d8d8d;
+}
+
+
+
+
+.outline-view .item .item-count-box.alt-count {
+  color: #fff;
+  background: #0a190a;
+  box-shadow: none;
+}
+
+
+.outline-view .item.selected {
+  background: #1f2f2f;
+  color: #ffffff;
+}
+
+
+
+.list-container .list-item.focused {
+  background: rgba(49, 125, 76, 0.35);
+  background:  rgba(125, 113, 49, 0.34);
+  color: #eee;
+  border-bottom: 1px solid #0a190a;
+}
+
+body.is-blurred .list-container .list-item.focused {
+  background: rgba(49, 125, 76, 0.35);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.35);
+  color: #eee;
+}
+
+
+
+
+.thread-list .unread:not(.focused):not(.selected), .draft-list .unread:not(.focused):not(.selected) {
+  background-color: #1f2f2f;
+  color: #fff !important;
+  // font-weight: bold;
+}
+
+
+.thread-list .unread:not(.focused):not(.selected):not(.next-is-selected), .draft-list .unread:not(.focused):not(.selected):not(.next-is-selected) {
+  border-bottom: 1px solid #1f2f2f;
+  border-left-color: #7c780a;
+  border-left-width: 1PX;
+}
+
+.thread-list .list-item, .draft-list .list-item {
+  background-color: #1a2727;
+  border-bottom: 1px solid rgba(31, 47, 47, 0.6);
+
+}
+
+
+.thread-list .thread-icon.thread-icon-unread, .draft-list .thread-icon.thread-icon-unread {
+  /* background-image: url(../static/images/thread-list/icon-unread-@2x.png); */
+  background: #5e5d36;
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  margin-top: 10px;
+  margin-left: -4px;
+}
+
+
+.thread-list-narrow .mail-important-icon {
+  margin-left: -2px;
+  float: left;
+  padding: 12px;
+  vertical-align: initial;
+}
+
+.outline-view .item.selected img.content-mask {
+  background-color: #afafaf;
+}
+
+
+
+.outline-view .item.selected {
+  background: linear-gradient(90deg, #233a3a5e, #233a3a);
+  background: rgba(49, 125, 76, 0.35);
+  color: #ffffff;
+ }
+
+
+
+ .thread-list-narrow .icons-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+  margin-right: 5px;
+}
+
+
+.toolbar-activity .activity-toolbar-icon {
+  margin-top: 20px;
+  background: #ffffff;
+}
+
+
+#message-list .message-item-area .message-iframe-container {
+  // background: #ffffff;
+}
+
+.composer-inner-wrap .composer-action-bar-wrap {
+    position: relative;
+    width: 100%;
+    background: #6580ef;
+    border-top: 1px solid #00000000;
+    box-shadow: none;
+    border-bottom: 0;
+    border-radius: 3px;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap .composer-action-bar-wrap {
+  background: #0f281d;
 }
